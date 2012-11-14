@@ -46,6 +46,9 @@ session_start();
 		</form>
 		
 		<script type="text/javascript">
+		// each page is given an id
+		// this only applies js to an old version of your page
+		// change id fileter to class
 		$("#filter").unbind('pageinit');
 		$("#filter").bind('pageinit', function(event){ 
 				alert("This is a nice alert");

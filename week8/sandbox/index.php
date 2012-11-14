@@ -1,3 +1,16 @@
+<?php
+  include 'Mobile_Detect.php';
+  $detect = new Mobile_Detect();
+
+  if (!$detect->isMobile()) {
+      // Any mobile device.
+      
+      // redirect
+      header('Location: mobiletest/iphone.php?url=stanford.edu/~zdocena/cgi-bin/cs147/week8/sandbox/mobile.php');
+      
+  }
+?>
+
 <!DOCTYPE html> 
 <html>
 
